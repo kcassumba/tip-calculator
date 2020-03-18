@@ -37,8 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
         RadioG1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-
+            public void onCheckedChanged(RadioGroup RadioG1, int multiButton) {
+               // RadioG1.
+               // calculateMeal(v);
             }
         });
 
@@ -60,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
         String input3 = numPeopleBox.getText().toString();
 
         double num = Double.parseDouble(input3);
-        double pp = mealValue / num;
-        totalPerBox.setText(String.format("%.2f", mealValue));
+       double pp = mealValue / num;
+      // totalPerBox.setText(String.format("%.2f", mealValue));
 
 
 
